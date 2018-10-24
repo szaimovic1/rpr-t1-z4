@@ -7,6 +7,12 @@ import static org.junit.jupiter.api.Assertions.*;
 class StudentTest {
 
     @Test
+    void testKonstruktora(){
+        Student s = new Student("Pepa", "Pig", 0);
+        assertEquals("Pig Pepa (0)", s.toString());
+    }
+
+    @Test
     void getBroj_indeksa() {
     }
 
