@@ -36,10 +36,15 @@ class PredmetTest {
 
     @Test
     void upisi() {
+        Predmet p = new Predmet("CN",7, 10);
+        Student s = new Student("Pepa", "Pig", 0);
+        p.upisi(s);
+        assertEquals("Pig Pepa (0)", p[0].toString());
     }
 
     @Test
     void ispisi() {
+
     }
 
     @Test

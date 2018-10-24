@@ -36,5 +36,6 @@ class StudentTest {
 
     @Test
     void ispisi() {
+
     }
 }
