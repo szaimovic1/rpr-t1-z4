@@ -36,9 +36,9 @@ class StudentTest {
     void setIme() {
     }
 
-    @Test
-    void toString() {
-    }
+   // @Test
+    //void toString(){
+    //}
 
     @Test
     void ispisi() {

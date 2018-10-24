@@ -42,22 +42,22 @@ public class Predmet {
     }
 
     public void upisi (Student s) {
-        /*int i=0;
+        int i=0;
         while(niz_studenata[i]!=null)
             i++;
-        niz_studenata[i]=new Student(s.getIme(), s.getPrezime(), s.getBroj_indeksa());*/
+        niz_studenata[i]=s;
 
-        for(int i = 0; i < getMax_broj_studenata(); i++)
+        /*for(int i = 0; i < getMax_broj_studenata(); i++)
             if(niz_studenata[i] == null) {
                 niz_studenata[i] = s;
                 break;
-            }
+            }*/
 
     }
 
     public void ispisi (Student s) {
         /*int i=0;
-        while(!(s.equals(niz_studenata[i])))
+        while(niz_studenata[i]!=null && !(s.equals(niz_studenata[i])))
             i++;
         while(niz_studenata[i]!=null) {
             if(niz_studenata[i+1]==null)
@@ -72,6 +72,7 @@ public class Predmet {
                 for(int j = i; j < getMax_broj_studenata() - 1; j++)
                     if(niz_studenata[j] != null)
                         niz_studenata[j] = niz_studenata[j + 1];
+                    i=max_broj_studenata;
             }
     }
 
@@ -81,5 +82,11 @@ public class Predmet {
             System.out.println(i+1 + "." + " " + niz_studenata[i]);
             i++;
         }
+    }
+
+    public Student dajStudenta(int i){
+        if(niz_studenata[i]==null)
+            return new Student("NU", "LL", 0);
+        return niz_studenata[i];
     }
 }

@@ -44,4 +44,5 @@ public class Student {
     public void ispisi(){
         System.out.println(this);
     }
+
 }

@@ -39,7 +39,7 @@ class PredmetTest {
         Predmet p = new Predmet("CN",7, 10);
         Student s = new Student("Pepa", "Pig", 0);
         p.upisi(s);
-        assertEquals("Pig Pepa (0)", p[0].toString());
+        assertEquals("Pig Pepa (0)", p.dajStudenta(0).toString());
     }
 
     @Test
@@ -48,7 +48,7 @@ class PredmetTest {
         Student s = new Student("Pepa", "Pig", 0);
         p.upisi(s);
         p.ispisi(s);
-        assertEquals(null, p[0].toString());
+        assertEquals("LL NU (0)", p.dajStudenta(0).toString());
     }
 
     @Test
